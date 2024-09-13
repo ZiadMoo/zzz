@@ -55,6 +55,7 @@ a {
     height: 100vh;
     background-color: var(--main-color);
     color: white;
+    margin-bottom: 80px;
 }
 
 .welcome-page .container {
@@ -142,6 +143,55 @@ a {
 }
 
 /* end Welcome Page */
+
+/* Start dreams page */
+.dreams-page {}
+
+.dreams-page .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+.dreams-page .container .box {
+    border-color: var(--main-color);
+    border-style: solid;
+    border-width: 1px 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.dreams-page .container .box span {}
+
+.dreams-page .container .box div {
+    text-align: center;
+}
+
+.dreams-page .box button {
+    color: var(--main-color);
+    font-weight: bold;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.3s;
+}
+
+.dreams-page .box button:hover {
+    color: white;
+    background-color: var(--main-color);
+    border-color: white;
+}
+
+.pro-box {}
+
+
+/* End dreams page */
 
 /* Start animation */
 @keyframes zzz {
