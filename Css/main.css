@@ -1,0 +1,162 @@
+/* Start Global ruels */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "SUSE", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+:root {
+    --main-color: #0f173d;
+}
+
+/* End Global ruels */
+
+/* Start Welcome Page */
+.welcome-page {
+    height: 100vh;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.welcome-page .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+@media (max-width:991px) {
+    .welcome-page .container {
+        flex-direction: column;
+    }
+}
+
+.welcome-page .txt {
+    flex-basis: 50%;
+}
+
+@media(max-width:991px) {
+    .container .txt {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.welcome-page .animation {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.welcome-page .animation i {
+    font-size: 250px;
+    transform: rotatey(180deg);
+}
+
+.welcome-page .animation .zs {
+
+    position: absolute;
+    height: 200px;
+    width: 80px;
+    top: -129px;
+    left: 294px;
+    overflow: hidden;
+}
+
+@media (max-width:991px) {
+    .welcome-page .container .animation .zs {
+        top: -77px;
+        left: 233px;
+    }
+}
+
+.welcome-page .animation .zs div {
+    position: absolute;
+    animation: zzz 6s infinite linear;
+    opacity: 0;
+    font-size: 100px;
+}
+
+.welcome-page .animation .zs div:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.welcome-page .animation .zs div:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.welcome-page .animation .zs div:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.welcome-page .animation .zs div:nth-child(5) {
+    animation-delay: 4s;
+}
+
+.welcome-page .animation .zs div:last-child {
+    animation-delay: 5s;
+}
+
+/* end Welcome Page */
+
+/* Start animation */
+@keyframes zzz {
+    0% {
+        opacity: 0;
+        font-size: 0;
+        bottom: 0
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 100px;
+        transform: translate(80px, -400px);
+
+    }
+}
+
+/* End animation */
