@@ -8,34 +8,66 @@
         <link rel="stylesheet" href="Css/main.css">
         <link rel="stylesheet" href="Css/all.min.css">
         <link rel="stylesheet" href="Css/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
-        <div class="welcome-page">
-            <div class="container">
-                <div class="txt">
-                    <h1>Hello,Welcome to our Dreams shop <span><i class="fa-solid fa-face-smile-beam"></i></span></h1>
-                    <p>we have a lot of dreams you will like them ... come on </p>
-                </div>
-                <div class="animation">
-                    <i class="fa-solid fa-bed"></i>
-                    <div class="zs">
-                        <div>Z</div>
-                        <div>Z</div>
-                        <div>Z</div>
-                        <div>Z</div>
-                        <div>Z</div>
-                        <div>Z</div>
-                    </div>
-                </div>
+        <nav class="navbar">
+        <a href="#" class="logo">Dreams Shop</a>
 
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dreams">Dreams</a></li>
+            <li>
+            <a href="#">Dropdown ▾</a>
+            <ul>
+                <li><a href="#dreams">Family Dreams</a></li>
+                <li><a href="#dreams">Adventure Dreams</a></li>
+                <li><div class="dropdown-divider"></div></li>
+                <li><a href="#dreams">All Dreams</a></li>
+            </ul>
+            </li>
+        </ul>
+
+        <form class="search-box">
+            <input type="text" placeholder="Search dreams...">
+            <button type="submit">Search</button>
+        </form>
+        </nav>
+
+        <div class="welcome-page" id="home">
+        <div class="container">
+            <div class="txt">
+            <h1>Hello, Welcome to our Dreams shop 
+                <span><i class="fa-solid fa-face-smile-beam"></i></span>
+            </h1>
+            <p>We have a lot of dreams you will like them ... come on </p>
+            <a href="#dreams" class="explore-btn">Explore Dreams</a>
+            </div>
+            <div class="animation">
+            <i class="fa-solid fa-bed"></i>
+            <div class="zs">
+                <div>Z</div><div>Z</div><div>Z</div><div>Z</div><div>Z</div><div>Z</div>
+            </div>
             </div>
         </div>
-        <div class="dreams-page">
+        </div>
+
+
+        <div class="dreams-page" id="dreams">
             <div class="container">
                 <div class="box">
                     <h2>dream about your father</h2>
@@ -77,11 +109,6 @@
                     <div class="button"><button>git it </button>
                     </div>
                 </div>
-                <!-- <div class="pro-box">
-                    <h2>pro</h2>
-                    <p>create your own dream</p>
-                    <p>duration up to 20 munites</p>
-                </div> -->
             </div>
         </div>
     </body>
